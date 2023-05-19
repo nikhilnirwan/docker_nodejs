@@ -59,3 +59,28 @@ sudo docker-compose up -d
 # enable docker file mode install depentancieas
 apt-get install vim
 apt-get install nano
+
+# install pm2 and configur our code
+https://pm2.io/docs/runtime/guide/installation/
+
+# mongodb ------------------
+# remove mongodb 
+sudo apt-get autoremove --purge mongodb
+
+# stop mongodb service 
+service mongod stop
+
+# check mongodb service status
+service mongod status
+sudo systemctl status mongod
+
+# enable or start mongodb 
+sudo systemctl enable --now mongod
+
+# check mongodb version 
+mongod --version
+
+# mongodb install dockumentation
+https://www.fosstechnix.com/how-to-install-mongodb-on-ubuntu-22-04-lts/
+
+# ----------------------------
